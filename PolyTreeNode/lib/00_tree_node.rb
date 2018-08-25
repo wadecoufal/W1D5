@@ -27,9 +27,9 @@ class PolyTreeNode
     child_node.parent = nil
   end
   
-  def inspect
-    "Node: value: #{value} children: #{@children.map {|child| child.value}}"
-  end
+  # def inspect
+  #   "Node: value: #{value} children: #{@children.map {|child| child.value}}"
+  # end
   
   def dfs(target_value)
     return self if self.value == target_value
